@@ -11,7 +11,6 @@ Source0: http://www.maxmind.com/download/geoip/api/python/%{oname}-%{version}.ta
 URL: http://www.maxmind.com/app/python
 License: BSD-like
 Group: Development/Python
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libpython-devel
 BuildRequires: libgeoip-devel
 
