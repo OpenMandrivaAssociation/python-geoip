@@ -1,6 +1,6 @@
 %define name python-geoip
 %define version 1.2.1
-%define release %mkrel 5
+%define release %mkrel 6
 %define oname GeoIP-Python
 
 Summary: Python bindings for the GeoIP library
