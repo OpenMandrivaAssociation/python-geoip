@@ -1,6 +1,6 @@
 %define name python-geoip
 %define version 1.2.1
-%define release %mkrel 6
+%define release %mkrel 7
 %define oname GeoIP-Python
 
 Summary: Python bindings for the GeoIP library
@@ -12,7 +12,7 @@ URL: http://www.maxmind.com/app/python
 License: BSD-like
 Group: Development/Python
 BuildRoot: %{_tmppath}/%{name}-buildroot
-BuildRequires: libpython-devel
+%py_requires -d
 BuildRequires: libgeoip-devel
 
 %description
