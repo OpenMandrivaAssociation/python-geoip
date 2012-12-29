@@ -1,13 +1,11 @@
 %define name python-geoip
-%define version 1.2.4
-%define release %mkrel 3
 %define oname GeoIP-Python
 
 Summary: Python bindings for the GeoIP library
 Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: http://www.maxmind.com/download/geoip/api/python/%{oname}-%{version}.tar.bz2
+Version: 1.2.7
+Release: 1
+Source0: http://www.maxmind.com/download/geoip/api/python/GeoIP-Python-%{version}.tar.gz
 URL: http://www.maxmind.com/app/python
 License: BSD-like
 Group: Development/Python
@@ -31,11 +29,7 @@ services are available from http://www.maxmind.com/
 python setup.py build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-python setup.py install --root=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
+python setup.py install --root=%{buildroot}
 
 %files
 %defattr(-,root,root)
@@ -80,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 - bot rebuild
 - Import python-geoip
 
-* Tue Nov 28 2006 Götz Waschk <waschk@mandriva.org> 1.2.1-2mdv2007.1
+* Tue Nov 28 2006 GÃ¶tz Waschk <waschk@mandriva.org> 1.2.1-2mdv2007.1
 - update file list
 
 * Mon Nov 28 2005 GÃ¶tz Waschk <waschk@mandriva.org> 1.2.1-1mdk
@@ -89,6 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 * Sat Dec 04 2004 Michael Scherer <misc@mandrake.org> 1.2.0-2mdk
 - Rebuild for new python
 
-* Thu Feb 19 2004 Götz Waschk <waschk@linux-mandrake.com> 1.2.0-1mdk
+* Thu Feb 19 2004 GÃ¶tz Waschk <waschk@linux-mandrake.com> 1.2.0-1mdk
 - new version
+
 
