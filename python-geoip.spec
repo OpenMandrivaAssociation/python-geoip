@@ -3,13 +3,12 @@
 
 Summary: Python bindings for the GeoIP library
 Name: %{name}
-Version: 1.2.7
+Version: 1.2.8
 Release: 1
-Source0: http://www.maxmind.com/download/geoip/api/python/GeoIP-Python-%{version}.tar.gz
+Source0: http://geolite.maxmind.com/download/geoip/api/python/GeoIP-Python-%{version}.tar.gz
 URL: http://www.maxmind.com/app/python
 License: BSD-like
 Group: Development/Python
-BuildRoot: %{_tmppath}/%{name}-buildroot
 %py_requires -d
 BuildRequires: libgeoip-devel
 
@@ -32,7 +31,6 @@ python setup.py build
 python setup.py install --root=%{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc README
 %py_platsitedir/*
 
@@ -85,5 +83,6 @@ python setup.py install --root=%{buildroot}
 
 * Thu Feb 19 2004 Götz Waschk <waschk@linux-mandrake.com> 1.2.0-1mdk
 - new version
+
 
 
