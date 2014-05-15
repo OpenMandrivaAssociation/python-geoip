@@ -1,16 +1,17 @@
-%define oname GeoIP-Python
+%define oname GeoIP
 
 Summary: Python bindings for the GeoIP library
-Name:    python-geoip
-Version: 1.2.8
+
+
+Name: python-geoip
+Version: 1.3.1
 Release: 1
-Source0: http://geolite.maxmind.com/download/geoip/api/python/GeoIP-Python-%{version}.tar.gz
+Source0: http://www.maxmind.com/download/geoip/api/python/GeoIP-%{version}.tar.gz
 URL: http://www.maxmind.com/app/python
 License: BSD-like
 Group: Development/Python
-
+BuildRequires:  python-devel
 BuildRequires: pkgconfig(geoip)
-BuildRequires: python-devel
 
 %description
 This is the Python API to the GeoIP library that enables the user to
@@ -22,7 +23,7 @@ reverse DNS lookups. Commercial databases and automatic update
 services are available from http://www.maxmind.com/
 
 %prep
-%setup -q -n %oname-%version
+%setup -q -n %oname-%{version}
 
 %build
 python setup.py build
@@ -31,6 +32,8 @@ python setup.py build
 python setup.py install --root=%{buildroot}
 
 %files
-%doc README
 %{py_platsitedir}/*
+
+
+
 

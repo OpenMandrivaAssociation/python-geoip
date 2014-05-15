@@ -1,5 +1,3 @@
-removed_sources:
-  GeoIP-Python-1.2.4.tar.bz2: 4dce8d695d3b456985f41cf46d90227d9fb30ea6
-  GeoIP-Python-1.2.7.tar.gz: 0af5f5d06bc81b5427019d28ba029e8c31dec9eb
 sources:
-  GeoIP-Python-1.2.8.tar.gz: 05cf2d08b72d4bd01b7a31115621f18557dff73c
+  GeoIP-1.3.1.tar.gz: 383f9f63ee63a21311a15f0625e0273bdafc9907
+
