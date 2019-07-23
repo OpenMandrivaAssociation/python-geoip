@@ -4,9 +4,9 @@ Summary: Python bindings for the GeoIP library
 
 
 Name: python-geoip
-Version: 1.3.1
-Release: 2
-Source0: http://www.maxmind.com/download/geoip/api/python/GeoIP-%{version}.tar.gz
+Version:	1.3.2
+Release:	1
+Source0:	https://files.pythonhosted.org/packages/f2/7b/a463b7c3df8ef4b9c92906da29ddc9e464d4045f00c475ad31cdb9a97aae/GeoIP-1.3.2.tar.gz
 URL: http://www.maxmind.com/app/python
 License: BSD-like
 Group: Development/Python
