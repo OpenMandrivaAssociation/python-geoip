@@ -7,7 +7,7 @@ Name: python-geoip
 Version:	1.3.2
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/f2/7b/a463b7c3df8ef4b9c92906da29ddc9e464d4045f00c475ad31cdb9a97aae/GeoIP-1.3.2.tar.gz
-URL: http://www.maxmind.com/app/python
+URL: https://www.maxmind.com/app/python
 License: BSD-like
 Group: Development/Python
 BuildRequires:  python-devel
